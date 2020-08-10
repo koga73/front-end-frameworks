@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HelloWorld</title>
+
+		<meta charset="utf8"/>
+
+		<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+		<script src="js/components/button.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<body data-ng-app="helloWorldApp">
+		<div data-ng-controller="HelloWorldController">
+			<h1>Click Count: {{count}}</h1>
+
+			<app-button data-ng-click="onButtonClick()" display="buttonDisplay.PRIMARY">Increase Click Count</app-button>
+
+			<ul>
+				<li data-ng-repeat="data in someData">{{data}}</li>
+			</ul>
+		</div>
+	</body>
+</html>

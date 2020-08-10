@@ -1,0 +1,7 @@
+<h1>Click Count: {{count}}</h1>
+
+<app-button (click)="onButtonClick()" [display]="buttonDisplay.PRIMARY">Increase Click Count</app-button>
+
+<ul>
+	<li *ngFor="let data of someData">{{data}}</li>
+</ul>

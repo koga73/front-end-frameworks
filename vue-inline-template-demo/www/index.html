@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HelloWorld</title>
+
+		<meta charset="utf8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<h1>Click Count: {{count}}</h1>
+
+			<v-button inline-template v-bind:display="buttonDisplay.PRIMARY" v-on:click="onButtonClick()">
+				<button v-bind:class="'btn btn-' + display" v-on:click="onClick()">
+					Increase Click Count
+				</button>
+			</v-button>
+
+			<ul>
+				<li v-for="data in someData">{{data}}</li>
+			</ul>
+		</div>
+
+		<script src="js/components/button.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

@@ -1,4 +1,4 @@
-# Angular JS Demo
+# AngularJS Demo
 
 ## Install
 ```

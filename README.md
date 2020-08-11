@@ -1,6 +1,8 @@
 # Front-end frameworks "Rosetta Stone"
 
-This repo demonstrates the same front-end built with React, Angular 10, AngularJS, and Vue
+This repo demonstrates the same front-end built with React, Angular, and Vue
+
+
 
 ## React:
 
@@ -8,7 +10,7 @@ This repo demonstrates the same front-end built with React, Angular 10, AngularJ
 
 - ES6/7 syntax
 - Easy to build and scale components
-- Webpack hot-reload doesn't refresh page
+- Lots of ways to use (Next.js, Gatsby, React Native)
 
 ### CONS:
 
@@ -44,8 +46,8 @@ Aka "Angular 2"
 ### CONS:
 
 - Complex project structure
+- Complex tooling configuration
 - You have to learn TypeScript
-- Hot-reload refreshes entire page
 
 ---
 
@@ -82,10 +84,25 @@ Aka "Angular 1"
 
 ## VueJS
 
+VueJS is similar to AngularJS and was created by an ex-Google employee from the AngularJS team!
+
 ### Pros
 
--
+- Lowest learning curve
+- inline-template allows server to render HTML
+- Flexible
 
 ### Cons
 
--
+- State management on large scale projects can get tricky (may need Vuex)
+- Debugging errors in templates is difficult
+
+---
+
+###### Commands used to generate the Vue project
+
+```
+npm install -g @vue/cli
+vue create hello-world
+npm install -D sass-loader sass
+```

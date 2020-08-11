@@ -9,7 +9,7 @@
     "watch": "nodemon -e sass,scss -x \"npm run sass\""
   },
   "repository": {},
-  "author": "AJ Savino <aj@savino.systems>",
+  "author": "AJ Savino <aj.savino@moxieusa.com>",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.14.1",
